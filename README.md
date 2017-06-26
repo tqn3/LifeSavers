@@ -1,2 +1,2 @@
 # LifeSavers
-Summer 17 LM Secret Project
+Summer 17 LM superduper secret project
