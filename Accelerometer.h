@@ -16,7 +16,7 @@ class Accelerometer{
     void setCalibrationTime(double value);
     void getBaseLine();
     int detect();
-    
+
     void printBoundaryValues();
     void printAccelValues();
     void printDouble(double val, unsigned int precision);
@@ -24,7 +24,7 @@ class Accelerometer{
     double xMin, xMax, xVal;
     double yMin, yMax, yVal;
     double zMin, zMax, zVal;
-    
+
   private:
     MMA8452Q accel;
     double tol;

@@ -87,43 +87,43 @@ void Accelerometer::printDouble(double val, unsigned int precision){
 int Accelerometer::detect(){
     double tolerance = getTol();
     if ( xVal > (xMax + tolerance ) || xVal < (xMin - tolerance) ){
-     Serial.println("X Detected");
-     Serial.println();
-     printDouble(xVal,100);
-     Serial.println();
+        Serial.println("X Detected");
+        Serial.println();
+        printDouble(xVal,100);
+        Serial.println();
         return 1;
     }
     else if ( yVal > (yMax + tolerance ) || yVal < (yMin - tolerance) ){
-     Serial.println("Y Detected");
-     printDouble(yVal,100);
-     Serial.println();
+        Serial.println("Y Detected");
+        printDouble(yVal,100);
+        Serial.println();
         return 1;
     }
     else if ( zVal > (zMax + tolerance ) || zVal < (zMin - tolerance) ){
-     Serial.println("Z Detected");
-     printDouble(zVal,100);
-     Serial.println();
+        Serial.println("Z Detected");
+        printDouble(zVal,100);
+        Serial.println();
         return 1;
-    }  else return 0;
+    } else return 0;
 }
 
 void Accelerometer::printBoundaryValues(){
-	Serial.print("xMin\txMax\t|\tyMin\tyMax\t|\tzMin\tzMax");
+    Serial.print("xMin\txMax\t|\tyMin\tyMax\t|\tzMin\tzMax");
 	Serial.println();
 	Serial.print(xMin);
     Serial.print("\t");
     Serial.print(xMax);
     Serial.print("\t \t");
-    
+
 	Serial.print(yMin);
     Serial.print("\t");
-    Serial.print(yMax); 
-    Serial.print("\t \t"); 
-    
+    Serial.print(yMax);
+    Serial.print("\t \t");
+
 	Serial.print(zMin);
     Serial.print("\t");
-    Serial.print(zMax); 
-    Serial.print("\t");       
+    Serial.print(zMax);
+    Serial.print("\t");
 }
 
 void Accelerometer::printAccelValues(){
@@ -131,9 +131,9 @@ void Accelerometer::printAccelValues(){
 	Serial.println();
 	Serial.print(xVal);
 	Serial.print("\t");
-    
+
 	Serial.print(yVal);
     Serial.print("\t");
-    
-	Serial.print(yVal);     
+
+	Serial.print(yVal);
 }
