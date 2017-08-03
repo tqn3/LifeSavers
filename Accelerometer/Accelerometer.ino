@@ -20,7 +20,7 @@ void setup() {
 //Set Calibration time and Tolerance here if needed
   accel.setCalibrationTime(4);
 //  accel.setTol(10);
-  
+  delay(1000);
   accel.getBaseLine();
 }
 
@@ -29,7 +29,7 @@ void loop() {
     digitalWrite(powerLED, HIGH);
     digitalWrite(detectLED, LOW);
     accel.read();
-    printValues();
+//    printValues();
     if ( accel.detect() == 1 ){
           digitalWrite(detectLED, HIGH);   // turn the LED on (HIGH is the voltage level)
           delay(500);
