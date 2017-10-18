@@ -1,2 +1,2 @@
 # LifeSavers
-Summer 17 LM superduper secret project
+Summer 17 Lockheed Martin superduper secret project
